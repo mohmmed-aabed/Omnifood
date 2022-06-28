@@ -6,6 +6,7 @@
   background-color: #fdf2e9;
   height: 6rem;
   padding: 0 3rem;
+  position: relative;
 }
 
 .logo {
@@ -16,7 +17,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .main-nav-link:link,
@@ -45,6 +46,19 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 3rem;
+  height: 3rem;
+  color: #333;
 }
 
 /* ------------------ HERO SECTION ------------------ */

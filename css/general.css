@@ -53,11 +53,17 @@ Medium: 12px
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* ------------------ UTILITIES ------------------ */
@@ -74,14 +80,15 @@ body {
 }
 
 .container {
-  max-width: 75rem;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .grid {
   display: grid;
-  gap: 4rem;
+  column-gap: 4rem;
+  row-gap: 6rem;
 }
 
 .grid:not(:last-child) {
@@ -238,6 +245,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1rem;
+  line-height: 1.2;
 }
 
 .list-icon {

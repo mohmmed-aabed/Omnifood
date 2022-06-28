@@ -1,0 +1,153 @@
+/* ------------------ Below 1200px ------------------ */
+@media (max-width: 75em) {
+  html {
+    font-size: 90%;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .testimonials-container {
+    padding: 6rem 4rem;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  .logos img {
+    height: 1.75rem;
+  }
+}
+
+/* ------------------ Below 1000px ------------------ */
+@media (max-width: 62.5em) {
+  html {
+    font-size: 80%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+
+  .delivered-meals {
+    margin-top: 3rem;
+  }
+
+  .logos img {
+    height: 1.5rem;
+  }
+
+  .meal-content {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+
+  .list {
+    gap: 0.75rem;
+  }
+
+  .section-testimonials {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form button {
+    margin-top: 1rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(100%);
+    transition: transform 0.5s;
+    /*  */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .icon-mobile-nav[name='close-outline'] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+}
+
+/* ------------------ Below 800px ------------------ */
+@media (max-width: 50em) {
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* ------------------ Below 600px ------------------ */
+@media (max-width: 37.5em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
