@@ -61,6 +61,23 @@
   color: #333;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 20;
+  height: 5rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.05);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sticky .section-hero {
+  margin-top: 5rem;
+}
+
 /* ------------------ HERO SECTION ------------------ */
 .section-hero {
   background-color: #fdf2e9;
